@@ -1,9 +1,9 @@
 "use strict";
 
-var outputDiv = $('#dinosaurs');
+const outputDiv = $('#dinosaurs');
 
-var domString = function(dinosaur) {
-	var domStrang = '';
+const domString = (dinosaur) => {
+	let domStrang = '';
       domStrang += `<div>`;
       domStrang +=   `<h1>${dinosaur.type}</h1>`;
       domStrang += `</div>`;
@@ -11,7 +11,7 @@ var domString = function(dinosaur) {
 };
 
 
-var printToDom = function(strang) {
+const printToDom = (strang) => {
 	outputDiv.append(strang);
 };
 
